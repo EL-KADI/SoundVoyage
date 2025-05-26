@@ -51,7 +51,7 @@ export default function InteractiveMap({ onCountrySelect }: InteractiveMapProps)
         {countries.map((country, index) => (
           <motion.div
             key={`label-${country.name}`}
-            className="absolute text-xs md:text-sm font-semibold text-gray-800 dark:text-white bg-white/80 dark:bg-gray-800/80 px-2 py-1 rounded shadow-md"
+            className="absolute text-xs mt-4 ms-2 md:ms-0 md:mt-0  md:text-sm font-semibold text-gray-800 dark:text-white bg-white/80 dark:bg-gray-800/80 px-2 py-1 rounded shadow-md"
             style={{ left: `${country.x + 2}%`, top: `${country.y - 8}%` }}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
